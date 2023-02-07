@@ -1,0 +1,25 @@
+.title {
+    text-align: center;
+    font-family: Poppins, sans-serif;
+    color: aliceblue;
+}
+
+.titledescription {
+    text-align: center;
+    font-family: Poppins, sans-serif;
+    font-style: italic;
+    color: aliceblue;
+}
+
+body {
+    background-image: url(https://www.ultrahdwallpaper.in/uploads/cache/354445076/technology-wallpaper-HD-1300x0-MM-100.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 20vw;
+    margin-right: 20vw;
+}
+
+fieldset {
+    align-items: center;
+    text-align: center;
+}

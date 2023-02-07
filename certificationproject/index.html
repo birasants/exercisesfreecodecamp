@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>freecodecampsurveyform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 id="title" class="title">Coding</h1>
+    <p id="description" class="titledescription">O quanto você gosta de programar?</p>
+</body>
+<fieldset id="survey-form" class="formfield">
+    <label for="Name">Enter your Name(Insira o seu nome) <input id="Name" type="text" required></label>
+    <label for="Email">Enter your Email(Insira o seu Email) <input type="email" required id="Email"></label>
+    <label for="Age">Age(Idade) <input type="number" min="10" max="120"></label>
+    <label for="option">Which option best describe your knowlegement?(Qual das opções descreve melhor seu conhecimento?)
+        <select name="knowlegement" id="option">
+            <option value="0">Select your Current knowlegement</option>
+            <option value="1">Beginner</option>
+            <option value="2">Intermediaty</option>
+            <option value="3">Advanced</option>
+        </select>
+    </label>
+    <label for="technology">Which technology you like most? (Qual dessas tecnologias você gosta mais?) <input
+            type="radio" name="tecnologias" id="tecnologias">Html</label>
+    <label for="technology"><input type="radio" name="tecnologias" id="tecnologias">Python</label>
+    <label for="technology"><input type="radio" name="tecnologias" id="tecnologias">Java</label>
+    <label for="technology"><input type="radio" name="tecnologias" id="tecnologias">Flutter</label>
+    <label for="option2">Which is the best way to study programming? (Qual a melhor maneira para estudar
+        programação?)</label>
+    <select name="study" id="study">
+        <option value="0">Select the best way</option>
+        <option value="1">Internet</option>
+        <option value="2">Reading</option>
+        <option value="3">Videos</option>
+    </select>
+    <label for="things">Things you do while you are coding<input type="checkbox" name="things" id="">Watch a TV
+        show</label>
+    <label for="things"><input type="checkbox" name="things" id="">Watch and support your team</label>
+    <label for="things"><input type="checkbox">Listen a music</label>
+    <label for="things"><input type="checkbox">Play a game</label>
+    <label for="things"><input type="checkbox">Watch TikTok</label>
+    <label for="Sites">How you descover about programming? <textarea name="descover" id="descover" cols="5" rows="40"
+            placeholder="I descovered it when I..."></textarea></label>
+    <label for="submit" class="button"><input type="submit" value="submit"></label>
+</fieldset>
+
+</html>
