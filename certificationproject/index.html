@@ -13,23 +13,41 @@
     <h1 id="title" class="title">Coding</h1>
     <p id="description" class="titledescription">O quanto você gosta de programar?</p>
 </body>
+<form id="survey-form"></form>
+
 <fieldset id="survey-form" class="formfield">
-    <label for="Name">Enter your Name(Insira o seu nome) <input id="Name" type="text" required></label>
-    <label for="Email">Enter your Email(Insira o seu Email) <input type="email" required id="Email"></label>
-    <label for="Age">Age(Idade) <input type="number" min="10" max="120"></label>
-    <label for="option">Which option best describe your knowlegement?(Qual das opções descreve melhor seu conhecimento?)
-        <select name="knowlegement" id="option">
-            <option value="0">Select your Current knowlegement</option>
-            <option value="1">Beginner</option>
-            <option value="2">Intermediaty</option>
-            <option value="3">Advanced</option>
-        </select>
-    </label>
-    <label for="technology">Which technology you like most? (Qual dessas tecnologias você gosta mais?) <input
-            type="radio" name="tecnologias" id="tecnologias">Html</label>
-    <label for="technology"><input type="radio" name="tecnologias" id="tecnologias">Python</label>
-    <label for="technology"><input type="radio" name="tecnologias" id="tecnologias">Java</label>
-    <label for="technology"><input type="radio" name="tecnologias" id="tecnologias">Flutter</label>
+
+    <div class="label-flex">
+        <label id="name-label" for="Name">Enter your Name(Insira o seu nome) </label><input id="name" type="text"
+            required placeholder="Put your name here!">
+
+        <label id="email-label" for="Email">Enter your Email(Insira o seu Email) </label><input type="email" id="email"
+            required placeholder="Put your email here!">
+    </div>
+    <label id="number-label" for="number">Age(Idade) </label>
+    <input type="number" min="10" max="90" id="number" placeholder="Your Age">
+
+
+    <label for="option">Which option best describe your knowlegement?(Qual das opções descreve melhor seu
+        conhecimento?)</label>
+
+    <select name="knowlegement" id="dropdown">
+        <option value="0">Select your Current knowlegement</option>
+        <option value="1">Beginner</option>
+        <option value="2">Intermediaty</option>
+        <option value="3">Advanced</option>
+    </select>
+
+
+
+    <p class="tech">Which technology you like most? (Qual dessas tecnologias você gosta mais?) </p>
+    <label for="technology"><input type="radio" name="tecnologias" id="tecnologias" value="lgg0">Html</label>
+    <label for="technology"><input type="radio" name="tecnologias" id="tecnologias" value="lgg1">Python</label>
+    <label for="technology"><input type="radio" name="tecnologias" id="tecnologias" value="lgg2">Java</label>
+    <label for="technology"><input type="radio" name="tecnologias" id="tecnologias" value="lgg3">Flutter</label>
+
+
+
     <label for="option2">Which is the best way to study programming? (Qual a melhor maneira para estudar
         programação?)</label>
     <select name="study" id="study">
@@ -38,15 +56,20 @@
         <option value="2">Reading</option>
         <option value="3">Videos</option>
     </select>
-    <label for="things">Things you do while you are coding<input type="checkbox" name="things" id="">Watch a TV
-        show</label>
-    <label for="things"><input type="checkbox" name="things" id="">Watch and support your team</label>
-    <label for="things"><input type="checkbox">Listen a music</label>
-    <label for="things"><input type="checkbox">Play a game</label>
-    <label for="things"><input type="checkbox">Watch TikTok</label>
+
+
+    <label for="things">Things you do while you are coding:
+        <input type="checkbox" name="things" id="" value="t0">Watch a TV show</label>
+    <label for="things"><input type="checkbox" name="things" id="" value="t1">Watch and support your team</label>
+    <label for="things"><input type="checkbox" value="t2">Listen a music</label>
+    <label for="things"><input type="checkbox" value="t3">Play a game</label>
+    <label for="things"><input type="checkbox" value="t4">Watch TikTok</label>
     <label for="Sites">How you descover about programming? <textarea name="descover" id="descover" cols="5" rows="40"
             placeholder="I descovered it when I..."></textarea></label>
     <label for="submit" class="button"><input type="submit" value="submit"></label>
+
+    <label for="submit"><button id="submit" type="submit">Enviar</button></label>
+
 </fieldset>
 
 </html>

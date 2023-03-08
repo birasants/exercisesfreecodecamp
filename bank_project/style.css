@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: white;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(320deg, #aafa87, #006b08, #76e6c9);
+    padding: 10px;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.5);
+    max-width: 700px;
+    width: 100%;
+    border: 2px;
+    border-radius: 5px;
+    padding: 25px 30px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.container>h1 {
+    text-align: center;
+}
+
+.names {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 30px;
+}
+
+div.names .name-input {
+    border: 0;
+}
+
+.names>label {
+    display: flex;
+    justify-content: center;
+    margin-left: 23px;
+    padding: 30px;
+}
+
+.email {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.Password {
+    display: flex;
+    justify-content: center;
+}
+
+.confirmpass {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.sub-button {
+    display: flex;
+    justify-content: center;
+}
